@@ -1210,15 +1210,22 @@ function tareas (){
 }
 tareas();
 
+function Agregar(){
+	var nuevo = document.getElementById("nuevaTarea").value;
+	var contenedor = document.getElementById('lista');
+	tareas().appendChild(nuevo);
+}
 
-var nuevo = new ;
-
-//	Constructor
+/*
+/*	Constructor Lo intente pero no resulto
 
 function Tarea(){
-	this.id = klandklasd;
+	this.id = function(){
+		var nuevoId = [];
+		nuevoId.push(res.length + 1);
+		;
 
-	this.title = function(){
+	this.agregar = function(){
 	 var data = [];
 	 var res = document.getElementById("nuevaTarea").value;
 	 data.push(res)
@@ -1226,22 +1233,5 @@ function Tarea(){
 
 	this.completed = false;
 }
-
-
-/*
-function agregar(){
-	this.datastore = [];
-	this.enqueue = function(){
-    this.dataStore.push(nuevo);
-  	};
-  	
-  	var nuevoEl = document.createElement('li');
-                    nuevoEl.id = agregar;
-    document.getElementById("lista").appendChild(li);
-
-    document.write( document.getElementById("nuevaTarea").value);
-}
-var resultado = document.getElementById("nuevaTarea").value;
-var nuevo = new agregar(resultado);
-document.write(nuevo.enqueue())
+var nuevo = new Tarea();
  */
