@@ -1201,13 +1201,47 @@ var res = [
   }
 ];
 
-function listaJ (){
+function tareas (){
 	var contenedor = document.getElementById('lista');
-
 	for(var i = 0; i < 10; i++){
 		contenedor.innerHTML += "<li>" + res[i].title + "</li>";
 	}
 
 }
-listaJ();
+tareas();
 
+
+var nuevo = new ;
+
+//	Constructor
+
+function Tarea(){
+	this.id = klandklasd;
+
+	this.title = function(){
+	 var data = [];
+	 var res = document.getElementById("nuevaTarea").value;
+	 data.push(res)
+	}
+
+	this.completed = false;
+}
+
+
+/*
+function agregar(){
+	this.datastore = [];
+	this.enqueue = function(){
+    this.dataStore.push(nuevo);
+  	};
+  	
+  	var nuevoEl = document.createElement('li');
+                    nuevoEl.id = agregar;
+    document.getElementById("lista").appendChild(li);
+
+    document.write( document.getElementById("nuevaTarea").value);
+}
+var resultado = document.getElementById("nuevaTarea").value;
+var nuevo = new agregar(resultado);
+document.write(nuevo.enqueue())
+ */
